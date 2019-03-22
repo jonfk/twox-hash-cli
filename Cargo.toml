@@ -1,0 +1,13 @@
+[package]
+name = "twox-hash-cli"
+version = "0.1.0"
+authors = ["Jonathan Fok kan <jonathan.fokkan@appdirect.com>"]
+edition = "2018"
+
+[[bin]]
+name = "twoxhash"
+path = "src/main.rs"
+
+[dependencies]
+twox-hash = "1.1.2"
+failure = "0.1.5"
