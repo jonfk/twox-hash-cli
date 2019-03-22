@@ -3,6 +3,12 @@ name = "twox-hash-cli"
 version = "0.1.0"
 authors = ["Jonathan Fok kan <jonathan.fokkan@appdirect.com>"]
 edition = "2018"
+description = "A cli for the twox-hash crate"
+repository = "https://github.com/jonfk/twox-hash-cli"
+readme = "README.md"
+license-file = "LICENSE.txt"
+keywords = ["cli", "hash", "xxhash"]
+maintenance = { status = "passively-maintained" }
 
 [[bin]]
 name = "twoxhash"
