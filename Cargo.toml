@@ -1,6 +1,6 @@
 [package]
 name = "twox-hash-cli"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Jonathan Fok kan <jonathan.fokkan@appdirect.com>"]
 edition = "2018"
 description = "A cli for the twox-hash crate"

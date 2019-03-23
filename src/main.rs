@@ -21,7 +21,7 @@ arg_enum! {
 
 fn main() {
     let mut app = App::new("twoxhash")
-        .version("1.0")
+        .version("1.0.0")
         .author("Jonathan Fok kan <jfokkan@gmail.com>")
         .about("Print xxhash checksums")
         .arg(
