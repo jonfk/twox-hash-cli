@@ -20,7 +20,7 @@ arg_enum! {
 }
 
 fn main() {
-    let matches = App::new("twoxhash")
+    let mut app = App::new("twoxhash")
         .version("1.0")
         .author("Jonathan Fok kan <jfokkan@gmail.com>")
         .about("Print xxhash checksums")
@@ -37,9 +37,13 @@ fn main() {
                 .possible_values(&Algorithm::variants())
                 .default_value("H64")
                 .takes_value(true),
-        )
-        .get_matches();
+        );
+    let matches = app.clone().get_matches();
 
+    if !matches.is_present("FILE") {
+        app.print_long_help().expect("print help");
+        process::exit(1)
+    }
     let files: Vec<&str> = matches.values_of("FILE").expect("NO FILE").collect();
     let algorithm = value_t!(matches.value_of("ALG"), Algorithm).expect("NO ALG");
 
