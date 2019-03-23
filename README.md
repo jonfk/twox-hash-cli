@@ -2,6 +2,13 @@
 
 A command line interface to the [TwoX-Hash](https://github.com/shepmaster/twox-hash) implementation of the XXHash algorithm.
 
+[![Crates.io](https://img.shields.io/crates/v/twox-hash-cli.svg)](https://crates.io/crates/twox-hash-cli)
+
+## Install
+```
+cargo install twox-hash-cli
+```
+
 ```
 ~ twoxhash
 twoxhash 1.0.0
